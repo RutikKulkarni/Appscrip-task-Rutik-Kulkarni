@@ -41,23 +41,17 @@ cd Appscrip-task-Rutik-Kulkarni
 npm install
 ```
 
-
-
 ## **Deployment**
 
 The project is hosted on **Vercel** for public access:
 
 - **Live Demo**: [View the live page](https://github.com/RutikKulkarni/Appscrip-task-Rutik-Kulkarni.git)
 
-
-
 ## **GitHub Repository**
 
 The source code for this project is available on GitHub:
 
 - **Repository URL**: [https://github.com/RutikKulkarni/Appscrip-task-Rutik-Kulkarni.git](https://github.com/RutikKulkarni/Appscrip-task-Rutik-Kulkarni.git)
-
-
 
 ## **Conclusion**
 
