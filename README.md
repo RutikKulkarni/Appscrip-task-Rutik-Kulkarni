@@ -45,7 +45,7 @@ npm install
 
 The project is hosted on **Vercel** for public access:
 
-- **Live Demo**: [View the live page](https://github.com/RutikKulkarni/Appscrip-task-Rutik-Kulkarni.git)
+- **Live Demo**: [View the live page](https://appscrip-task-rutik.vercel.app/)
 
 ## **GitHub Repository**
 
