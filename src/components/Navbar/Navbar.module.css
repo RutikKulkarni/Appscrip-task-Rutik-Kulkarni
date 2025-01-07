@@ -1,16 +1,10 @@
-:root {
-  --primary-color: #000;
-  --secondary-color: #ff66b2;
-  --text-color: #fff;
-}
-
 .navbar {
   font-family: Arial, sans-serif;
 }
 
 .topBar {
-  background-color: var(--primary-color);
-  color: var(--text-color);
+  background-color: #000;
+  color: #fff;
   padding: 0.5rem 1rem;
 }
 
@@ -25,7 +19,7 @@
 }
 
 .topBarContent span {
-  color: var(--secondary-color);
+  color: #ff66b2;
   font-size: 0.9rem;
 }
 
@@ -86,11 +80,11 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: var(--primary-color);
+    background-color: #000;
     width: 100%;
     text-align: center;
     padding: 1rem 0;
-    color: var(--text-color);
+    color: #fff;
   }
 
   .mobileNavOpen {
