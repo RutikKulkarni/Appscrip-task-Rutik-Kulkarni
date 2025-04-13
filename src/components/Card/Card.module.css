@@ -1,0 +1,83 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 320px;
+  height: 400px;
+  text-align: left;
+  background: linear-gradient(135deg, #f9fafb, #ffffff);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.textWrapper {
+  padding-left: 10px;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: #444;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #888;
+  margin: 0.5rem 0;
+  line-height: 1.4;
+}
+
+.button {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+    height: auto;
+  }
+}
