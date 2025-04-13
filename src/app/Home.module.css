@@ -6,19 +6,147 @@
   margin: 0;
 }
 
+.contentWrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.mainLayout {
+  display: flex;
+  gap: 20px;
+  padding: 0 1rem;
+}
+
+.headingRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.filterToggle {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.filterToggle:hover {
+  background-color: #555;
+}
+
+.filterSidebar {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  min-width: 250px;
+  height: fit-content;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  margin-top: 2rem;
+}
+
+.showFilters {
+  transform: translateX(0);
+  opacity: 1;
+  display: block;
+}
+
+.hideFilters {
+  transform: translateX(-300px);
+  opacity: 0;
+  display: none;
+}
+
+.filterSection h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.filterGroup {
+  margin-bottom: 1.5rem;
+}
+
+.filterGroup h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.filterCheckbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.filterCheckbox input {
+  margin-right: 0.5rem;
+}
+
+.priceSlider {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.priceLabels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.resetButton {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.resetButton:hover {
+  background-color: #e0e0e0;
+}
+
 .mainContent {
   padding: 2rem;
-  margin: 2rem auto;
-  max-width: 1200px;
-  /* max-width: 80%; */
-  width: 90%;
+  margin: 2rem 0;
+  width: 100%;
   text-align: center;
+  transition: width 0.3s ease;
+}
+
+.withFilters {
+  width: calc(100% - 270px);
+}
+
+.withoutFilters {
+  width: 100%;
 }
 
 .heading {
   font-size: 2.5rem;
   color: #333;
+  margin: 0;
+}
+
+.resultCount {
   margin-bottom: 2rem;
+  color: #666;
+  text-align: left;
+}
+
+.noResults {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .productGrid {
@@ -101,15 +229,47 @@
   .productGrid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .filterSidebar {
+    min-width: 220px;
+  }
+
+  .withFilters {
+    width: calc(100% - 240px);
+  }
 }
 
 @media (max-width: 768px) {
+  .headingRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .mainLayout {
+    flex-direction: column;
+  }
+
+  .filterSidebar {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .hideFilters {
+    transform: translateY(-300px);
+  }
+
+  .withFilters {
+    width: 100%;
+  }
+
   .productGrid {
     grid-template-columns: 1fr;
   }
 
   .mainContent {
     padding: 1rem;
+    margin: 1rem 0;
   }
 
   .heading {
